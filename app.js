@@ -137,7 +137,7 @@ function ecoliCheck(array) {
         total = total + measure;
     }
     let avg = (total / array.length);
-    if (avg > 50) {
+    if (avg > 55) {
         return true;
     }
     else {
