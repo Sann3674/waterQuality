@@ -1,3 +1,15 @@
 .hidden {
     display: none;
 }
+
+.italic {
+    font-style: italic;
+}
+
+#validateInput {
+    color: red;
+}
+
+#rating {
+    font-weight: 800;
+}

@@ -13,34 +13,39 @@
 </head>
 
 <body>
-    <h1>How clean is the sea water near you?</h1>
-    <p>Search from the full list of designated bathing beaches in the UK.</p>
-    <h3>Enter an address:</h3>
-    <form action="" id="location">
-        <input type="text" placeholder="Latitude" name="lat">
-        <input type="text" placeholder="Longitude" name="long">
-        <button>Search</button>
-    </form>
-    <br>
-    <p>To convert a UK postcode to latitude & longitude coordinates, use this tool: <a
-            target="_blank" href="https://www.freemaptools.com/convert-uk-postcode-to-lat-lng.htm">www.freemaptools.com</a></p>
-    <p id="validateInput"></p>
-    <div id="nearBeach" class="hidden">
-        <h3>Nearest bathing beach</h3>
-        <p id="beach"></p>
-    </div>
-    <div id="measurement" class="hidden">
-        <h3>Water quality reading</h3>
-        <p>Based on all readings taken, the water quality at <span id="beach2"></span> beach is <span
-                id="rating"></span>.</p>
-        <p>Notes on the reading:</p>
-        <ul>
-            <li>Uses Environment Agency water quality data from the Water Quality Archive (Beta).</li>
-            <li>This water quality assessment is based on the level of E.coli observed at the sampling point, and how
-                this compares to the national average.</li>
-            <li>You can find more information at the relevant Government website:
-                https://www.api.gov.uk/ea/water-quality/#water-quality</li>
-        </ul>
+    <div class="container">
+        <h1>How clean is the sea water near you?</h1>
+        <p>Search from the full list of designated bathing beaches in the UK.</p>
+        <h3>Enter an address:</h3>
+        <form action="" id="location">
+            <input type="text" placeholder="Latitude" name="lat">
+            <input type="text" placeholder="Longitude" name="long">
+            <button>Search</button>
+        </form>
+        <br>
+        <p class="italic">To convert a UK postcode to latitude & longitude coordinates, use this tool: <a target="_blank"
+                href="https://www.freemaptools.com/convert-uk-postcode-to-lat-lng.htm">www.freemaptools.com</a></p>
+        <p id="validateInput"></p>
+        <div id="nearBeach" class="hidden">
+            <hr>
+            <h3>Nearest bathing beach</h3>
+            <p id="beach"></p>
+        </div>
+        <div id="measurement" class="hidden">
+            <hr>
+            <h3>Water quality reading</h3>
+            <p>Based on all readings taken, the water quality at <span id="beach2"></span> beach is <span
+                    id="rating"></span>.</p>
+            <p>Notes on the reading:</p>
+            <ul>
+                <li>Uses Environment Agency water quality data from the Water Quality Archive (Beta).</li>
+                <li>This water quality assessment is based on the level of E.coli observed at the sampling point, and
+                    how
+                    this compares to the national average.</li>
+                <li>You can find more information on the data source on this Government website:
+                    <a target="_blank" href="https://www.api.gov.uk/ea/water-quality/#water-quality">www.api.gov.uk/ea/water-quality</a></li>
+            </ul>
+        </div>
     </div>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
